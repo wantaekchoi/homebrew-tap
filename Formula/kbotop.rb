@@ -1,25 +1,25 @@
 class Kbotop < Formula
-  desc "Watch KBO baseball from your terminal — live scoreboard & strike-zone pitch tracking, in the spirit of htop."
+  desc "Watch KBO baseball in your terminal, with strike-zone pitch tracking."
   homepage "https://github.com/wantaekchoi/kbotop"
-  version "0.8.0"
+  version "0.9.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.8.0/kbotop-aarch64-apple-darwin.tar.xz"
-      sha256 "d2719ad3e355fa490e839368ebaf4b660d0ba31ad0aa46d683f9447334da44b8"
+      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.9.0/kbotop-aarch64-apple-darwin.tar.xz"
+      sha256 "d2c92cd14620d3fb0ace1b5680a7772120dede4743fca9815069f8f57349000d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.8.0/kbotop-x86_64-apple-darwin.tar.xz"
-      sha256 "68cbdff5d325171a058efdfc889c31fbf63eb14681edfe255397c70b953b01c2"
+      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.9.0/kbotop-x86_64-apple-darwin.tar.xz"
+      sha256 "1009cc6eb4ff6a12e2e20f89cbfa7f52b6b891a43467a0f8573b88a4146543a4"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.8.0/kbotop-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a5c219c55fc35159f563808d3700d5889bf83c56ea34c6bcc7b1ecbcc31d3796"
+      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.9.0/kbotop-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "475c5f93e172677ecffa6304d382e577572c06abd98969ab4834d60eb7812179"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.8.0/kbotop-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "982c6881452b4c7f51928055dcaa235b9689d50d3f24fd41b4b647e44a2f2af1"
+      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.9.0/kbotop-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d5785d2b2d10fbd0c68217583dbd6ed90530bf8d5e485a676b07401061c1116f"
     end
   end
   license "MIT"
