@@ -1,33 +1,34 @@
 class Kbotop < Formula
   desc "Watch KBO baseball in your terminal, with strike-zone pitch tracking."
   homepage "https://github.com/wantaekchoi/kbotop"
-  version "0.15.0"
+  version "0.16.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.15.0/kbotop-aarch64-apple-darwin.tar.xz"
-      sha256 "7ab40c0b7491231511912298edf7c1b15f0d8e8856511b9b80699ace6a4fc488"
+      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.16.0/kbotop-aarch64-apple-darwin.tar.xz"
+      sha256 "d4ba4be95fbc5a0ce2f950ba3920390882f75595944f99111d40a93fa632fcd7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.15.0/kbotop-x86_64-apple-darwin.tar.xz"
-      sha256 "a36e4f1993ea12b6dc444b8ed34a6fd837da6ee62da0f402df159f52b2a345e0"
+      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.16.0/kbotop-x86_64-apple-darwin.tar.xz"
+      sha256 "3386c04b2e52b0f87cc6dd5973175ed5e5052b59e6ced69f911c811504f5e40f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.15.0/kbotop-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "0bf1c55fde0822e5af322d12949bdcd0767f893540e3cc513153ff69140a0380"
+      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.16.0/kbotop-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5a5745a1dd317890e95e6be1313f7d25b050b5842a509c11cd5d2c8525f0b3f0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.15.0/kbotop-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b7b033bd6f1b16628515ec1cbb71438e948ae335de50e8c904ea218ea3580d09"
+      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.16.0/kbotop-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "40b06fe613b02660e3b213ea87876cf9399e0ffc1fc0f93a98cdf763c392f646"
     end
   end
-  license "MIT"
+  license any_of: ["Unlicense", "MIT"]
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
     "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
     "x86_64-unknown-linux-gnu":  {},
   }.freeze
 
