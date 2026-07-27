@@ -1,28 +1,28 @@
 class Kbotop < Formula
   desc "Watch KBO baseball in your terminal, with strike-zone pitch tracking."
   homepage "https://github.com/wantaekchoi/kbotop"
-  version "0.19.0"
+  version "0.20.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.19.0/kbotop-aarch64-apple-darwin.tar.xz"
-      sha256 "4aeab98c83d110181e0dce7ff476d6b1ccc36bef3856fe35c0dc402fd5458c9e"
+      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.20.0/kbotop-aarch64-apple-darwin.tar.xz"
+      sha256 "791aed7a3e4a7e35e77fd68d5d8cda83af7c22adab30f26b45af17b866b45c1c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.19.0/kbotop-x86_64-apple-darwin.tar.xz"
-      sha256 "31897ec7c45765feebeac557705bee8960b37e8efb730b69de4fb06c5e62c368"
+      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.20.0/kbotop-x86_64-apple-darwin.tar.xz"
+      sha256 "09ca9121efcd66284aac8acf35ca28a91419de4fbee6182633a6e46efb6ede07"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.19.0/kbotop-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f4ed1734561ef41cc55722dd58c707c12642b63666a9d1468e47306ef3630f59"
+      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.20.0/kbotop-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "0c061342d9af027a760df1e71a4facdaa26ef93bc5d8d6869064c45b02308dc5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.19.0/kbotop-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e4604d710740c89c6e5ac14a8344ba0393e5190cb91078823763fa0f4d1589cd"
+      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.20.0/kbotop-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4df374cc04a5fc48038eeef82ab2b5ca94a5771398e7e3575e49d1058559dfa1"
     end
   end
-  license any_of: ["Unlicense", "MIT"]
+  license "Unlicense"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
