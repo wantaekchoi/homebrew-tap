@@ -1,25 +1,25 @@
 class Kbotop < Formula
   desc "Watch KBO baseball in your terminal, with strike-zone pitch tracking."
   homepage "https://github.com/wantaekchoi/kbotop"
-  version "0.35.0"
+  version "0.36.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.35.0/kbotop-aarch64-apple-darwin.tar.xz"
-      sha256 "d2eb75b959c103ecf99237c5f04b31621f7753a11c3339d3e6bff2389cf5bac5"
+      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.36.0/kbotop-aarch64-apple-darwin.tar.xz"
+      sha256 "59b807812306da23cd6be4b6a19cb973e8324ed47cca94494989aaeeeee22f65"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.35.0/kbotop-x86_64-apple-darwin.tar.xz"
-      sha256 "2c1e37b397788e814f1e8820c724069f6765af38095a0830b9a8806b04f64459"
+      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.36.0/kbotop-x86_64-apple-darwin.tar.xz"
+      sha256 "b3a6113228e45f120fd04cc05d8866a4fd2cb9857110acd8793cc1c2a3c7b900"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.35.0/kbotop-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ccb7fa6f2716da59bb20577aabf9de41cc3e661f644cd965223e3a9bb4e83d8c"
+      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.36.0/kbotop-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c14c159d898d5326f71808e96ea8c5b55871d1b54dff64e656b53c6e6dd72fa2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.35.0/kbotop-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "17cfac3bc8a3584b87f0ed5f1d5801347c859424f497f0d8baabee0595bb991f"
+      url "https://github.com/wantaekchoi/kbotop/releases/download/v0.36.0/kbotop-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c41afe6a4f1c2aeded5b803d3e6f4d355a736fdb8766f2d143fe135c671e6dd8"
     end
   end
   license "Unlicense"
